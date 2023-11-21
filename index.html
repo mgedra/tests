@@ -23,6 +23,10 @@
     funcion
       document.getElementBy("RadamaisSaturs").style.display = "none";
      document.getElementBy("PogaRadit").style.display = "block";
+     
+     function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
     } 
   </script>
     
@@ -98,6 +102,13 @@
        <div> id="RadamaisSaturs">
       <p>jjjjhjjjjjjjj</p>
         <button onclick="PasleptSaturu()">RaditMazak</button>
+
+        <p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
     </div>
       
 </body>
