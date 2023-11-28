@@ -9,9 +9,7 @@
     display:none;
      }
     body {
-      background-color: rgb(20, 133, 20);
-      background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fsimple-modern-background-wallpaper-blue_26597306.htm&psig=AOvVaw2TXWkgffltWfSlLd1PLs8_&ust=1699530197793000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDEncOptIIDFQAAAAAdAAAAABAc");
-      background-image: url("https://img.freepik.com/premium-photo/stylish-green-slate-background-natural-textured-look_629685-1257.jpg");
+      background-image: url("https://www.illiberalism.org/wp-content/uploads/2023/02/Library-books_green_theory.png");
       background-size: cover;
     } 
     .container{
@@ -20,11 +18,13 @@
     </style>
  <script>
  function RaditSaturu(){
-  document.getElementBy("RadamaisSaturs").style.display = "block";
-  document.getElementBy("PogaRadit").style.display = "none";
- function PasleptSaturu(){
-  document.getElementBy("RadamaisSaturs").style.display = "none";
-  document.getElementBy("PogaRadit").style.display = "block";
+  document.getElementById("RadamaisSaturs").style.display = "block";
+  document.getElementById("PogaRadit").style.display = "none";
+ }
+  function PasleptSaturu(){
+  document.getElementById("RadamaisSaturs").style.display = "none";
+  document.getElementById("PogaRadit").style.display = "block";
+}
  </script>
  
 </head>
@@ -37,7 +37,7 @@
       <h3>Learning syles</h3>
      <p>According to Howard, depending on the person, there are 8 learning styles.</p>   
      <a href="https://bau.edu/blog/types-of-learning-styles/">This is a link</a>   
-     <img src="https://pbs.twimg.com/media/DaAX4owV4AAh-Uj.jpg" width="300" height="300"> 
+     <img src="https://www.educationcorner.com/images/learning-styles-venn-diagram-vark.png" width="390" height="300"> 
      <style>
       table, th, td {
         border: 1px solid black;
@@ -65,7 +65,7 @@
 
     </div>
     <div class="col-8">
-      <h2>Learning methods</h2>
+      <h1>Learning methods</h1>
 <p>Teaching methods are the broader techniques used to help students achieve learning outcomes, while activities are the different ways of implementing these methods. Teaching methods help students: master the content of the course. learn how to apply the content in particular contexts.</p>   
     <div class="col">
       <table>
@@ -94,7 +94,7 @@
         <li>Determine which learning style you identify with the most.</li>
       </ol>
            <p>jjjjjjjjjjjjkjjkjjj</p>
-      <button id="PogaRadit" onclick-="RaditSaturu()">RaditVairak</button>
+      <button id="PogaRadit" onclick="RaditSaturu()">RaditVairak</button>
         <div id="RadamaisSaturs">
       <p>jjjjhjjjjjjjj</p>
         <button onclick="PasleptSaturu()">RaditMazak</button>
