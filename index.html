@@ -18,22 +18,39 @@
         background-color: rgb(209, 216, 220);
         border-left-style: solid; border-color: black;
         } 
-    </style>
+          .row2 {
+      background-color: rgb(199, 196, 196);
+      border-left-style: solid; border-color: black;
+    }
+    #rounded{
+    border-radius: 25px;
+    background-color: rgb(199, 196, 196);
+    column-gap: 40px;
+  }
+  h2 {
+    font-family: "Times New Roman", Times, serif; font-weight: bold;
+  }
+  h5 {
+    font-family: 'Times New Roman', Times, serif; font-style: italic;
+  }
+  #borderAUGSA{
+    border-top-style: solid; border-color: black;    </style>
         <script>    
              
         </script>
   </head>
     <body>
-      <div class="container p-5 my-5 border align-items-center" id="container">
+<div class="container p-5 my-5 border align-items-center" id="container">
         <div class="row">
           <div class="col-3">
-            <h1>French</h1>
-            <h3>Vocabolirie, grammar, past tense</h3>
+            <h2>Politiskie režīmi </h2>
+            <h5>Demokrātija, Autoritārisms, Totalitārisms </h5>
           </div>
-          <div class="col-9 text-end" >
-            <img id="mainas"  class="img-fluid"  src= 'https://images.ohmyhosting.se/Yt_RkMO7Jx30oCNqWuRR8V552oM=/fit-in/1680x1050/smart/filters:quality(85)/https%3A%2F%2Fengelsbergideas.com%2Fwp-content%2Fuploads%2F2022%2F10%2FItalian-Fascists-Youth-group-pwjp5c4945uemsdbjbgqdzwefetb8st8dp1d23gzh4-1.jpg' width="600px" height="300px">
-          </div> 
-                 <div class="row p-3">
+          <div class="col-9" id="mainas">
+            <img src= 'https://images.ohmyhosting.se/Yt_RkMO7Jx30oCNqWuRR8V552oM=/fit-in/1680x1050/smart/filters:quality(85)/https%3A%2F%2Fengelsbergideas.com%2Fwp-content%2Fuploads%2F2022%2F10%2FItalian-Fascists-Youth-group-pwjp5c4945uemsdbjbgqdzwefetb8st8dp1d23gzh4-1.jpg' width="600px" height="300px">
+          </div>
+        </div>
+          <div class="row p-3">
             <div class="col">
               <h7>Politiskie režīmi </h7>
               <h8>Definējums</h8>
@@ -41,38 +58,114 @@
             </div>
             </div>
               <div class="container-fluid text-center">
+                <div class="row p-3" id="borderAUGSA">
                   <div class="col" id="rounded">
                     <h6>Demokrātija</h6>             
                     <p>Tektssssssssssssssssssss</p>
+                    <div class="col">
+                      <ol>
+                        <li>k</li>
+                        <li>k</li>
+                        <ul>
+                            <li>kkas</li>
+                          </ul>
+                        <li>kkas </li>
+                      </ol>
+                    </div>
+                    <button id="PogaRadit1" onclick="RaditSaturu1()">RaditVairak</button>
+                    <div id="RadamaisSaturs1">
                       <p>Tekstsssssssss2</p>
+                    <button onclick="PasleptSaturu1()">RaditMazak</button>
                     </div>
                   </div>
                   <div class="col" id="rounded">
                     <h6>Autoritārisms</h6>
                     <p>Tekstssssssssssssssss</p>
-                    
+                    <div class="col">
+                      <ol>
+                        <li>k</li>
+                        <li>k</li>
+                        <ul>
+                            <li>kkas</li>
+                          </ul>
+                        <li>kkas </li>
+                      </ol>
                     </div>
-                   
+                    <button id="PogaRadit2" onclick="RaditSaturu2()">RaditVairak</button>
+                    <div id="RadamaisSaturs2">
                       <p>Tekstsssssssss2</p>
+                    <button onclick="PasleptSaturu2()">RaditMazak</button>
                     </div>
                   </div>
                   <div class="col" id="rounded">
                     <h6>Totalitārisms</h6>
                     <p>Tekssssssssssssss</p>
                     <div class="col">
-                      
+                      <ol>
+                        <li>k</li>
+                        <li>k</li>
+                        <ul>
+                            <li>kkas</li>
+                          </ul>
+                        <li>kkas </li>
+                      </ol>
+                    </div>
+                     <button id="PogaRadit3" onclick="RaditSaturu3()">RaditVairak</button>
+                  <div id="RadamaisSaturs3">
+                    <p>Tekstsssssssss2</p>
+                  <button onclick="PasleptSaturu3()">RaditMazak</button>
                   </div>
                 </div>
               </div>
-              
+              <div class="row p-5">
+                <div class="col">
+                  <caption>Tabula par kko vispārīgu katram režīmam</caption>
+                  <style>
+                    table, th, td {
+                      border: 2px solid rgba(15, 13, 13, 0.633);
+                    }
+                    td {
+                      color: rgb(228, 225, 180);
+                    } 
+                    tr {
+                      background-color: rgba(255, 255, 255, 0.14);
+                    } 
+                  </style>
+                <table style="width:100%">
+                    <tr>
+                        <th>Demokrātija</th>
+                        <th>Autoritārisms</th>
+                        <th>Totalitārisms</th>
+                    <tr>
+                      <td >.</td>
+                      <td>.</td>
+                      <td>.</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
 
-              
+              <div class="row2 p-6" >
+                <div class="col">
+                  <h5>Inormācijas avoti</h5>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                </div>
+                </div>
                
     
 
 
 
 
+
+                
+            </div>
+          </div>
+      </div>
+    </body>
+</html>
 
                 
            
