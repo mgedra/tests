@@ -78,6 +78,29 @@ function myFunction() {
     x.innerHTML = "Hello";
   }
 }
+
+          section {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}        
         </script>
   </head>
     <body>
@@ -88,10 +111,19 @@ function myFunction() {
             <h1 class="text-center">The history of Christmas</h1>
             <h3 class="text-center">History, orgin, traditions  </h3>
           </div>
-<div class="float-start">Float start on all viewport sizes</div><br>
-<div class="float-end">Float end on all viewport sizes</div><br>
-<div class="float-none">Don't float on all viewport sizes</div>
-  </div>
+<section>
+  <div class="left">1</div>
+  <div class="left">2</div>
+  <div class="right">3</div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+    sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+    iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+    aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+    congue.
+  </p>
+</section>  
+        </div>
           <div class="row text-center">
             <div class="col">
             <h5>When is christmas celebrated?</h5>
