@@ -2,6 +2,7 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christmas history</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -50,18 +51,25 @@
         background-color: rgba(159, 159, 159, 0.609);
         color: black;
         border: 2px solid #7d8783;
-      }      
+      } 
+      #more {display: none;}
     </style>
         <script>    
- function RaditSaturu1(){
-            document.getElementById("RadamaisSaturs1").style.display = "block";
-            document.getElementById("PogaRadit1").style.display = "none";
-            
-          }
-            function PasleptSaturu1(){
-            document.getElementById("RadamaisSaturs1").style.display = "none";
-            document.getElementById("PogaRadit1").style.display = "inline";
-          }      
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}      
         </script>
   </head>
     <body>
@@ -80,8 +88,11 @@
             <div class="col">
             <h5>When is christmas celebrated?</h5>
               <p>Christmas is celebrated on December 25 and is both a sacred religious holiday and a worldwide cultural and commercial phenomenon. For two millennia, people around the world have been observing it with traditions and practices that are both religious and secular in nature. Christians celebrate Christmas Day as the anniversary of the birth of Jesus of Nazareth, a spiritual leader whose teachings form the basis of their religion. Popular customs include exchanging gifts, decorating Christmas trees, attending church, sharing meals with family and friends and, of course, waiting for Santa Claus to arrive. December 25—Christmas Day—has been a federal holiday in the United States since 1870.Christmas was traditionally a Christian festival celebrating the birth of Jesus, but in the early 20th century, it also became a secular family holiday, observed by Christians and non-Christians alike. The secular holiday is often devoid of Christian elements, with the mythical figure Santa Claus playing the pivotal role.</P>    
-<h>Contemporary customs in the West</h> 
-             
+            <h>Contemporary customs in the West</h> 
+            <h2>Read More Read Less Button</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>            
+            </div>
               <div class="col">
                 <h5>Hoe did Christmas start?</h5>
                   <p>The middle of winter has long been a time of celebration around the world. Centuries before the arrival of the man called Jesus, early Europeans celebrated light and birth in the darkest days of winter. Many peoples rejoiced during the winter solstice, when the worst of the winter was behind them and they could look forward to longer days and extended hours of sunlight. In Scandinavia, the Norse celebrated Yule from December 21, the winter solstice, through January. In recognition of the return of the sun, fathers and sons would bring home large logs, which they would set on fire. The people would feast until the log burned out, which could take as many as 12 days. The Norse believed that each spark from the fire represented a new pig or calf that would be born during the coming year. The end of December was a perfect time for celebration in most areas of Europe. At that time of year, most cattle were slaughtered so they would not have to be fed during the winter. For many, it was the only time of year when they had a supply of fresh meat. In addition, most wine and beer made during the year was finally fermented and ready for drinking. In Germany, people honored the pagan god Oden during the mid-winter holiday. Germans were terrified of Oden, as they believed he made nocturnal flights through the sky to observe his people, and then decide who would prosper or perish. Because of his presence, many people chose to stay inside.</p>
@@ -139,4 +150,3 @@
       </div>
         </body>
 </html>         
-
