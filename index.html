@@ -55,6 +55,11 @@
         border: 2px solid #7d8783;
       } 
       #more {display: none;}
+      }
+      table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
     </style>
         <script>    
 function myFunction() {
@@ -114,7 +119,24 @@ function myFunction() {
   <li>Tea</li>
   <li>Milk</li>
 </ol>               
-              <button onclick="myFunction()" id="myBtn">Read more</button>            
+              <button onclick="myFunction()" id="myBtn">Read more</button> 
+              <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th> 
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td> 
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td> 
+    <td>Mexico</td>
+  </tr>
+</table>            
             </div>
               <div class="col">
                 <h5>Hoe did Christmas start?</h5>
@@ -125,35 +147,7 @@ function myFunction() {
                        <p class="text-center">Politikas zinātnē ir pieņemts nošķirt antīko un moderno demokrātiju. Lai gan starp tām ir daudz kopīga, tomēr tās ir vēsturiski skaidri nošķiramas demokrātijas attīstības fāzes. Demokrātijas dzimšana Senajā Grieķijā, jau skaidri apliecina demokrātijas pamatprincipus – Atēnu pilsoņu politisko vienlīdzību un vairākuma varu. Atēnu politiskā kopiena nebūt neaptvēra visus brīvos cilvēkus, pieaugušos cilvēkus, pat ne visus brīvos, pieaugušos vīriešus, bet gan vienīgi stingrā mantošanas kārtībā pilsonību ieguvušos vīriešu kārtas atēniešus. Vienlaikus jau seno Atēnu demokrātijā spilgti iezīmējās vairāki raksturlielumi, kas nākotnē raksturos demokrātiskas iekārtas: pilsoņu tieša un aktīva līdzdalība valsts lietās, ar to saistīts patriotisms un “pilsonisko tikumu” izplatība, publiskas diskusijas un brīvas viedokļu sāncensības vērtība.</p>
                         <p class="text-center"> Demokrātiski principi guva savu ietekmi arī republikāniskajā Romā, kur turklāt tie apvienojās ar vēlāk Eiropas demokrātiskajai politikai ļoti svarīgo tiesību kategoriju.</p>
                        <button onclick="PasleptSaturu1()">Rādīt mazāk</button>                
-                <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+               
               </div>
           </div>  
 
