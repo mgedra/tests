@@ -71,7 +71,17 @@ function myFunction() {
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";
   }
-}      
+} 
+  function RaditSaturu1(){
+            document.getElementById("RadamaisSaturs1").style.display = "block";
+            document.getElementById("PogaRadit1").style.display = "none";
+            document.getElementById("mainas").src = 'https://cdn.theatlantic.com/thumbor/uKykjvsHQH27udABpk8WGx463os=/0x256:3231x2073/1600x900/media/img/mt/2017/11/GettyImages_517331826/original.jpg';
+  }
+    function PasleptSaturu1(){
+            document.getElementById("RadamaisSaturs1").style.display = "none";
+            document.getElementById("PogaRadit1").style.display = "inline";
+            document.getElementById("mainas").src = 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200';
+          }
         </script>
   </head>
     <body>
@@ -81,8 +91,7 @@ function myFunction() {
           <div class="col-3">
             <h1 class="text-center">The history of Christmas</h1>
             <h3 class="text-center">History, orgin, traditions  </h3> 
-            <p>jjjjjjjjjjjjjj</p>
-                        <img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="300px" height="200px">
+                        <img id="mainas" text-center class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="300px" height="200px">
           </div>
           <div class="col-9 text-end" >
             <img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="600px" height="300px">
@@ -113,7 +122,12 @@ function myFunction() {
               <div class="col">
                 <h5>Hoe did Christmas start?</h5>
                   <p>The middle of winter has long been a time of celebration around the world. Centuries before the arrival of the man called Jesus, early Europeans celebrated light and birth in the darkest days of winter. Many peoples rejoiced during the winter solstice, when the worst of the winter was behind them and they could look forward to longer days and extended hours of sunlight. In Scandinavia, the Norse celebrated Yule from December 21, the winter solstice, through January. In recognition of the return of the sun, fathers and sons would bring home large logs, which they would set on fire. The people would feast until the log burned out, which could take as many as 12 days. The Norse believed that each spark from the fire represented a new pig or calf that would be born during the coming year. The end of December was a perfect time for celebration in most areas of Europe. At that time of year, most cattle were slaughtered so they would not have to be fed during the winter. For many, it was the only time of year when they had a supply of fresh meat. In addition, most wine and beer made during the year was finally fermented and ready for drinking. In Germany, people honored the pagan god Oden during the mid-winter holiday. Germans were terrified of Oden, as they believed he made nocturnal flights through the sky to observe his people, and then decide who would prosper or perish. Because of his presence, many people chose to stay inside.</p>
-              <table class="table table-striped">
+                <button id="PogaRadit1" onclick="RaditSaturu1()">Rādīt vairāk</button>
+                      <div id="RadamaisSaturs1">
+                       <p class="text-center">Politikas zinātnē ir pieņemts nošķirt antīko un moderno demokrātiju. Lai gan starp tām ir daudz kopīga, tomēr tās ir vēsturiski skaidri nošķiramas demokrātijas attīstības fāzes. Demokrātijas dzimšana Senajā Grieķijā, jau skaidri apliecina demokrātijas pamatprincipus – Atēnu pilsoņu politisko vienlīdzību un vairākuma varu. Atēnu politiskā kopiena nebūt neaptvēra visus brīvos cilvēkus, pieaugušos cilvēkus, pat ne visus brīvos, pieaugušos vīriešus, bet gan vienīgi stingrā mantošanas kārtībā pilsonību ieguvušos vīriešu kārtas atēniešus. Vienlaikus jau seno Atēnu demokrātijā spilgti iezīmējās vairāki raksturlielumi, kas nākotnē raksturos demokrātiskas iekārtas: pilsoņu tieša un aktīva līdzdalība valsts lietās, ar to saistīts patriotisms un “pilsonisko tikumu” izplatība, publiskas diskusijas un brīvas viedokļu sāncensības vērtība.</p>
+                        <p class="text-center"> Demokrātiski principi guva savu ietekmi arī republikāniskajā Romā, kur turklāt tie apvienojās ar vēlāk Eiropas demokrātiskajai politikai ļoti svarīgo tiesību kategoriju.</p>
+                       <button onclick="PasleptSaturu1()">Rādīt mazāk</button>                
+                <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
