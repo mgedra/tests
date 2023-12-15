@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Christmas history</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -78,20 +79,62 @@ function myFunction() {
     x.innerHTML = "Hello";
   }
 }
+        body {
+	margin: 0;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
         </script>
   </head>
     <body>
       <body>
       <div class="container p-5 my-5 border align-items-center" id="container">
-        <div class="row">
-          <div class="col-3">
-            <h1 class="text-center">The history of Christmas</h1>
-            <h3 class="text-center">History, orgin, traditions  </h3>
-          </div>
-          <div class="col-9 text-end" >
-            <img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="600px" height="300px">
-          </div>
-        </div>
+
+
+
+	<div class="image-grid">
+		<img class="image-grid-col-2 image-grid-row-2" src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
+	</div>
+</body>
+</html>        
           <div class="row text-center">
             <div class="col">
             <h5>When is christmas celebrated?</h5>
