@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="eng">
   <head>
     <meta charset="utf-8">
@@ -69,35 +69,31 @@ function myFunction() {
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";
   }
-}      
+} 
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
         </script>
   </head>
     <body>
       <body>
       <div class="container p-5 my-5 border align-items-center" id="container">
-        <div class="grid gap-3">
-  <div class="p-2 g-col-6"><img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="600px" height="300px">
-</div>
-  <div class="p-2 g-col-6"><h1 class="text-center">The history of Christmas</h1>
-            <h3 class="text-center">History, orgin, traditions  </h3>
-  </div>
-  <div class="p-2 g-col-6">Grid item 3</div>
-  <div class="p-2 g-col-6">Grid item 4</div>
-</div>        
         <div class="row">
           <div class="col-3">
             <h1 class="text-center">The history of Christmas</h1>
             <h3 class="text-center">History, orgin, traditions  </h3>
           </div>
-          <br>
           <div class="col-9 text-end" >
             <img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="600px" height="300px">
           </div>
         </div>
-        <br>
           <div class="row text-center">
             <div class="col">
-              <br>
             <h5>When is christmas celebrated?</h5>
               <p>Christmas is celebrated on December 25 and is both a sacred religious holiday and a worldwide cultural and commercial phenomenon. For two millennia, people around the world have been observing it with traditions and practices that are both religious and secular in nature. Christians celebrate Christmas Day as the anniversary of the birth of Jesus of Nazareth, a spiritual leader whose teachings form the basis of their religion. Popular customs include exchanging gifts, decorating Christmas trees, attending church, sharing meals with family and friends and, of course, waiting for Santa Claus to arrive. December 25—Christmas Day—has been a federal holiday in the United States since 1870.Christmas was traditionally a Christian festival celebrating the birth of Jesus, but in the early 20th century, it also became a secular family holiday, observed by Christians and non-Christians alike. The secular holiday is often devoid of Christian elements, with the mythical figure Santa Claus playing the pivotal role.</P>    
             <h>Contemporary customs in the West</h> 
@@ -106,24 +102,27 @@ function myFunction() {
 <button onclick="myFunction()" id="myBtn">Read more</button>            
             </div>
               <div class="col">
-                <h5>Hoe did Christmas start?</h5>
+                <h5>How did Christmas start?</h5>
                   <p>The middle of winter has long been a time of celebration around the world. Centuries before the arrival of the man called Jesus, early Europeans celebrated light and birth in the darkest days of winter. Many peoples rejoiced during the winter solstice, when the worst of the winter was behind them and they could look forward to longer days and extended hours of sunlight. In Scandinavia, the Norse celebrated Yule from December 21, the winter solstice, through January. In recognition of the return of the sun, fathers and sons would bring home large logs, which they would set on fire. The people would feast until the log burned out, which could take as many as 12 days. The Norse believed that each spark from the fire represented a new pig or calf that would be born during the coming year. The end of December was a perfect time for celebration in most areas of Europe. At that time of year, most cattle were slaughtered so they would not have to be fed during the winter. For many, it was the only time of year when they had a supply of fresh meat. In addition, most wine and beer made during the year was finally fermented and ready for drinking. In Germany, people honored the pagan god Oden during the mid-winter holiday. Germans were terrified of Oden, as they believed he made nocturnal flights through the sky to observe his people, and then decide who would prosper or perish. Because of his presence, many people chose to stay inside.</p>
+              <p>Click the button to swap the text of the DIV element:</p>
+
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Hello</div>
               </div>
           </div>  
 
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>        
         
 <div class="row">
     <div class="col">
           <img id="mainas"  class="img-fluid"  src= 'https://loveincorporated.blob.core.windows.net/contentimages/gallery/c63d6ce8-5e54-4c9a-a6b1-580d2e6181ce-vintage-past-yule-3.jpg' width="600px" height="300px">
     </div>
 </div>
-       <br>
-<div class="row"
-      <div class="col">
-  <h5 class="text-break"> Traditions in diffrent countries</h5>        
- </div>
-</div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+<h5 class="text-break"> Traditions in diffrent countries</h5>        
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -164,6 +163,5 @@ function myFunction() {
       </div>
         </body>
 </html>         
-
         
  
