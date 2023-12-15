@@ -55,6 +55,8 @@
         border: 2px solid #7d8783;
       } 
       #more {display: none;}
+      table, th, td {
+  border:1px solid black;    
     </style>
         <script>    
 function myFunction() {
@@ -116,7 +118,21 @@ function myFunction() {
               <h>Contemporary customs in the West</h> 
             <h2>Read More Read Less Button</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>            
+<button onclick="myFunction()" id="myBtn">Read more</button>    
+              <table style="width:100%">
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
             </div>
               <div class="col">
                 <h5>Hoe did Christmas start?</h5>
@@ -127,35 +143,7 @@ function myFunction() {
                        <p class="text-center">Politikas zinātnē ir pieņemts nošķirt antīko un moderno demokrātiju. Lai gan starp tām ir daudz kopīga, tomēr tās ir vēsturiski skaidri nošķiramas demokrātijas attīstības fāzes. Demokrātijas dzimšana Senajā Grieķijā, jau skaidri apliecina demokrātijas pamatprincipus – Atēnu pilsoņu politisko vienlīdzību un vairākuma varu. Atēnu politiskā kopiena nebūt neaptvēra visus brīvos cilvēkus, pieaugušos cilvēkus, pat ne visus brīvos, pieaugušos vīriešus, bet gan vienīgi stingrā mantošanas kārtībā pilsonību ieguvušos vīriešu kārtas atēniešus. Vienlaikus jau seno Atēnu demokrātijā spilgti iezīmējās vairāki raksturlielumi, kas nākotnē raksturos demokrātiskas iekārtas: pilsoņu tieša un aktīva līdzdalība valsts lietās, ar to saistīts patriotisms un “pilsonisko tikumu” izplatība, publiskas diskusijas un brīvas viedokļu sāncensības vērtība.</p>
                         <p class="text-center"> Demokrātiski principi guva savu ietekmi arī republikāniskajā Romā, kur turklāt tie apvienojās ar vēlāk Eiropas demokrātiskajai politikai ļoti svarīgo tiesību kategoriju.</p>
                        <button onclick="PasleptSaturu1()">Rādīt mazāk</button>                
-                <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+
               </div>
           </div>  
 
@@ -164,7 +152,6 @@ function myFunction() {
       <h5 class="text-break"> Traditions in diffrent countries</h5>        
     </div>
   </div>
-<h5 class="text-break"> Traditions in diffrent countries</h5>        
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
