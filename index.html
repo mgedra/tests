@@ -16,10 +16,7 @@
         display: none;
         }
       #container {
-
-        background-color: white
-        ;
-
+        background-color: white;
         }
       #rounded{
         border-radius: 25px;
@@ -56,41 +53,46 @@
       } 
       #more {display: none;}
       }
-      table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
+      table, td, th {
+      border: 1px solid black;
+      }
+
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+      th {
+      text-align: left;    
     </style>
         <script>    
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+            function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-} 
-  function RaditSaturu1(){
+            if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+            } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+                  }
+            } 
+            function RaditSaturu1(){
             document.getElementById("RadamaisSaturs1").style.display = "block";
             document.getElementById("PogaRadit1").style.display = "none";
             document.getElementById("mainas").src = 'https://cdn.theatlantic.com/thumbor/uKykjvsHQH27udABpk8WGx463os=/0x256:3231x2073/1600x900/media/img/mt/2017/11/GettyImages_517331826/original.jpg';
-  }
-    function PasleptSaturu1(){
+            }
+            function PasleptSaturu1(){
             document.getElementById("RadamaisSaturs1").style.display = "none";
             document.getElementById("PogaRadit1").style.display = "inline";
             document.getElementById("mainas").src = 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200';
-          }
+            }
         </script>
   </head>
     <body>
-      <body>
       <div class="container p-5 my-5 border align-items-center" id="container">
         <div class="row">
           <div class="col-3">
@@ -100,107 +102,96 @@ function myFunction() {
           <div class="col-9 text-end" >
             <img id="mainas"  class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="600px" height="300px">
           </div>
-          
         </div>
           <div class="row text-center">
             <div class="col">
             <h5>When is christmas celebrated?</h5>
               <p>Christmas is celebrated on December 25 and is both a sacred religious holiday and a worldwide cultural and commercial phenomenon. For two millennia, people around the world have been observing it with traditions and practices that are both religious and secular in nature. Christians celebrate Christmas Day as the anniversary of the birth of Jesus of Nazareth, a spiritual leader whose teachings form the basis of their religion. Popular customs include exchanging gifts, decorating Christmas trees, attending church, sharing meals with family and friends and, of course, waiting for Santa Claus to arrive. December 25—Christmas Day—has been a federal holiday in the United States since 1870.Christmas was traditionally a Christian festival celebrating the birth of Jesus, but in the early 20th century, it also became a secular family holiday, observed by Christians and non-Christians alike. The secular holiday is often devoid of Christian elements, with the mythical figure Santa Claus playing the pivotal role.</P>    
-                         <ul style="list-style-type:disc;">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>  
+                     <ul style="list-style-type:disc;">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ul>  
               <h>Contemporary customs in the West</h> 
-            <h2>Read More Read Less Button</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-<ol type="1">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>    
-              <table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <ol type="1">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>    
+              <table>
+                <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+            </tr>
+             <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+        </table>
               <button onclick="myFunction()" id="myBtn">Read more</button>
-              
-            </div>
+         </div>
               <div class="col">
-                <h5>Hoe did Christmas start?</h5>
+                  <h5>Hoe did Christmas start?</h5>
                         <img id="mainas" text-center class="img-fluid"  src= 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' width="300px" height="200px">
-                  <p>The middle of winter has long been a time of celebration around the world. Centuries before the arrival of the man called Jesus, early Europeans celebrated light and birth in the darkest days of winter. Many peoples rejoiced during the winter solstice, when the worst of the winter was behind them and they could look forward to longer days and extended hours of sunlight. In Scandinavia, the Norse celebrated Yule from December 21, the winter solstice, through January. In recognition of the return of the sun, fathers and sons would bring home large logs, which they would set on fire. The people would feast until the log burned out, which could take as many as 12 days. The Norse believed that each spark from the fire represented a new pig or calf that would be born during the coming year. The end of December was a perfect time for celebration in most areas of Europe. At that time of year, most cattle were slaughtered so they would not have to be fed during the winter. For many, it was the only time of year when they had a supply of fresh meat. In addition, most wine and beer made during the year was finally fermented and ready for drinking. In Germany, people honored the pagan god Oden during the mid-winter holiday. Germans were terrified of Oden, as they believed he made nocturnal flights through the sky to observe his people, and then decide who would prosper or perish. Because of his presence, many people chose to stay inside.</p>
-                <button id="PogaRadit1" onclick="RaditSaturu1()">Rādīt vairāk</button>
-                      <div id="RadamaisSaturs1">
-                       <p class="text-center">Politikas zinātnē ir pieņemts nošķirt antīko un moderno demokrātiju. Lai gan starp tām ir daudz kopīga, tomēr tās ir vēsturiski skaidri nošķiramas demokrātijas attīstības fāzes. Demokrātijas dzimšana Senajā Grieķijā, jau skaidri apliecina demokrātijas pamatprincipus – Atēnu pilsoņu politisko vienlīdzību un vairākuma varu. Atēnu politiskā kopiena nebūt neaptvēra visus brīvos cilvēkus, pieaugušos cilvēkus, pat ne visus brīvos, pieaugušos vīriešus, bet gan vienīgi stingrā mantošanas kārtībā pilsonību ieguvušos vīriešu kārtas atēniešus. Vienlaikus jau seno Atēnu demokrātijā spilgti iezīmējās vairāki raksturlielumi, kas nākotnē raksturos demokrātiskas iekārtas: pilsoņu tieša un aktīva līdzdalība valsts lietās, ar to saistīts patriotisms un “pilsonisko tikumu” izplatība, publiskas diskusijas un brīvas viedokļu sāncensības vērtība.</p>
-                        <p class="text-center"> Demokrātiski principi guva savu ietekmi arī republikāniskajā Romā, kur turklāt tie apvienojās ar vēlāk Eiropas demokrātiskajai politikai ļoti svarīgo tiesību kategoriju.</p>
-                       <button onclick="PasleptSaturu1()">Rādīt mazāk</button>                
-               
-              </div>
-          </div>  
+                      <p>The middle of winter has long been a time of celebration around the world. Centuries before the arrival of the man called Jesus, early Europeans celebrated light and birth in the darkest days of winter. Many peoples rejoiced during the winter solstice, when the worst of the winter was behind them and they could look forward to longer days and extended hours of sunlight. In Scandinavia, the Norse celebrated Yule from December 21, the winter solstice, through January. In recognition of the return of the sun, fathers and sons would bring home large logs, which they would set on fire. The people would feast until the log burned out, which could take as many as 12 days. The Norse believed that each spark from the fire represented a new pig or calf that would be born during the coming year. The end of December was a perfect time for celebration in most areas of Europe. At that time of year, most cattle were slaughtered so they would not have to be fed during the winter. For many, it was the only time of year when they had a supply of fresh meat. In addition, most wine and beer made during the year was finally fermented and ready for drinking. In Germany, people honored the pagan god Oden during the mid-winter holiday. Germans were terrified of Oden, as they believed he made nocturnal flights through the sky to observe his people, and then decide who would prosper or perish. Because of his presence, many people chose to stay inside.</p>
+                        <button id="PogaRadit1" onclick="RaditSaturu1()">Rādīt vairāk</button>
+                          <div id="RadamaisSaturs1">
+                            <p class="text-center">Politikas zinātnē ir pieņemts nošķirt antīko un moderno demokrātiju. Lai gan starp tām ir daudz kopīga, tomēr tās ir vēsturiski skaidri nošķiramas demokrātijas attīstības fāzes. Demokrātijas dzimšana Senajā Grieķijā, jau skaidri apliecina demokrātijas pamatprincipus – Atēnu pilsoņu politisko vienlīdzību un vairākuma varu. Atēnu politiskā kopiena nebūt neaptvēra visus brīvos cilvēkus, pieaugušos cilvēkus, pat ne visus brīvos, pieaugušos vīriešus, bet gan vienīgi stingrā mantošanas kārtībā pilsonību ieguvušos vīriešu kārtas atēniešus. Vienlaikus jau seno Atēnu demokrātijā spilgti iezīmējās vairāki raksturlielumi, kas nākotnē raksturos demokrātiskas iekārtas: pilsoņu tieša un aktīva līdzdalība valsts lietās, ar to saistīts patriotisms un “pilsonisko tikumu” izplatība, publiskas diskusijas un brīvas viedokļu sāncensības vērtība.</p>
+                            <p class="text-center"> Demokrātiski principi guva savu ietekmi arī republikāniskajā Romā, kur turklāt tie apvienojās ar vēlāk Eiropas demokrātiskajai politikai ļoti svarīgo tiesību kategoriju.</p>
+                               <button onclick="PasleptSaturu1()">Rādīt mazāk</button>                
+                        </div>
+                </div>  
+          <div class="row align-items-center">
+            <div class="col">
+              <h5 class="text-break"> Traditions in diffrent countries</h5>        
+          </div>
+        </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                 <p>America</p>
+                  </button>
+                    </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The United States of America has many different traditions and ways that people celebrate Christmas, because of its multi-cultural nature. Many customs are similar to ones in the UK, France, Italy, The Netherlands, Poland and Mexico. The traditional meal for Western European families is turkey or ham with cranberry sauce. Families from Eastern European origins favour turkey with trimmings, kielbasa/kielbasi (a Polish sausage), cabbage dishes, and soups; and some Italian families prefer lasagne! The meal is often eaten at the time it is eaten in the culture that people come from. This can be on Christmas Eve or Christmas day. For many Italian-American families a big Christmas Eve meal of different fish dishes is now a very popular tradition! It's known as The Feast of the Seven Fishes ('Festa dei sette pesci' in Italian). The feast seems to have its root in southern Italy and was bought over to the USA by Italian immigrants in the 1800s. It now seems more popular in America than it is in Italy!Some Americans use pop-corn threaded on string to help decorate their Christmas Tree. Making gingerbread houses is also popular to make and eat at Christmas! Eggnog is a 'traditional' Christmas drink in the USA.</div>
+               </div>
+          </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Australia
+                  </button>
+                    </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> jjjjjjj</div>
+                    </div>
+            </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      France
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">jjjjj.</div>
+               </div>
+          </div>
+        </div>        
 
-  <div class="row align-items-center">
-    <div class="col">
-      <h5 class="text-break"> Traditions in diffrent countries</h5>        
-    </div>
-  </div>
-
-<div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-       <p>America</p>
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">The United States of America has many different traditions and ways that people celebrate Christmas, because of its multi-cultural nature. Many customs are similar to ones in the UK, France, Italy, The Netherlands, Poland and Mexico. The traditional meal for Western European families is turkey or ham with cranberry sauce. Families from Eastern European origins favour turkey with trimmings, kielbasa/kielbasi (a Polish sausage), cabbage dishes, and soups; and some Italian families prefer lasagne! The meal is often eaten at the time it is eaten in the culture that people come from. This can be on Christmas Eve or Christmas day. For many Italian-American families a big Christmas Eve meal of different fish dishes is now a very popular tradition! It's known as The Feast of the Seven Fishes ('Festa dei sette pesci' in Italian). The feast seems to have its root in southern Italy and was bought over to the USA by Italian immigrants in the 1800s. It now seems more popular in America than it is in Italy!Some Americans use pop-corn threaded on string to help decorate their Christmas Tree. Making gingerbread houses is also popular to make and eat at Christmas! Eggnog is a 'traditional' Christmas drink in the USA.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Australia
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"> jjjjjjj</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        France
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">jjjjj.</div>
-    </div>
-  </div>
-</div>        
-
-        
-     
-      
-      
-      
       </div>
         </body>
 </html>         
