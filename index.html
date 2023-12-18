@@ -1,95 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christmas history</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <style>
-      body {
-        background-image: url("https://inblackandwhitephotos.files.wordpress.com/2020/12/son0636.jpg?w=1024");
-        background-size: cover;
-        column-gap: 100px;
+        body {
+            background-image: url("https://inblackandwhitephotos.files.wordpress.com/2020/12/son0636.jpg?w=1024");
+            background-size: cover;
+            column-gap: 100px;
         }
-      #raadaamaissaturs{
-        display: none;
+
+        #raadaamaissaturs {
+            display: none;
         }
-      #container {
-        background-color: white;
+
+        #container {
+            background-color: white;
         }
-      #rounded{
-        border-radius: 25px;
-        background-color: white
-        ;
-        column-gap: 40px;
+
+        #rounded {
+            border-radius: 25px;
+            background-color: white;
+            column-gap: 40px;
         }
-      #caption{
-        font-size: larger; 
+
+        #caption {
+            font-size: larger;
         }
-      h1 {
-        font-family: "Times New Roman", Times, serif; font-weight: bold;
+
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
         }
-      h3 {
-        font-family: 'Times New Roman', Times, serif; font-style: italic;
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
         }
-      #RadamaisSaturs1 {
-        display: none
+
+        #RadamaisSaturs1 {
+            display: none;
         }
-      h7 {
-        font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: x-large;
+
+        h7 {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
         }
-      h5 {
-        font-family: 'Times New Roman', Times, serif; font-weight: bold; 
-      }
-      button {
-        border-radius: 12px; 
-        background-color: rgba(159, 159, 159, 0.609);
-        color: black;
-        border: 2px solid #7d8783;
-      } 
-      #more {display: none;}
-      .gap100{
-        padding: 70px 0pc;
-      }
-       table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
+
+        h5 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        button {
+            border-radius: 12px;
+            background-color: rgba(159, 159, 159, 0.609);
+            color: black;
+            border: 2px solid #7d8783;
+        }
+
+        #more {
+            display: none;
+        }
+
+        .gap100 {
+            padding: 70px 0pc;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
     </style>
-        <script defer>     
-            function RaditSaturu1(){
+    <script defer>
+        function RaditSaturu1() {
             document.getElementById("RadamaisSaturs1").style.display = "block";
             document.getElementById("PogaRadit1").style.display = "none";
             document.getElementById("mainas").src = 'https://i.dailymail.co.uk/1s/2020/12/08/09/36583670-9029727-image-a-84_1607420508421.jpg';
-            }
-            function PasleptSaturu1(){
+        }
+
+        function PasleptSaturu1() {
             document.getElementById("RadamaisSaturs1").style.display = "none";
             document.getElementById("PogaRadit1").style.display = "inline";
             document.getElementById("mainas").src = 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200';
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML === "Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas Cards and Presents are popular.") {
+                x.innerHTML = "In Japan, Christmas in known as more of a time to spread happiness rather than a religious celebration. Christmas Eve is often celebrated more than Christmas Day. Christmas Eve is thought of as a romantic day, in which couples spend together and exchange presents. In many ways, it resembles Valentine's Day celebrations in the UK and the USA. Young couples like to go for walks to look at the Christmas lights and have a romantic meal in a restaurant - booking a table on Christmas Eve can be very difficult as it's so popular!";
+            } else {
+                x.innerHTML = "Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas Cards and Presents are popular.";
             }
-          function myFunction() {
-          var x = document.getElementById("myDIV");
-          if (x.innerHTML === "Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas Cards and Presents are popular.") {
-          x.innerHTML = "In Japan, Christmas in known as more of a time to spread happiness rather than a religious celebration. Christmas Eve is often celebrated more than Christmas Day. Christmas Eve is thought of as a romantic day, in which couples spend together and exchange presents. In many ways it resembles Valentine's Day celebrations in the UK and the USA. Young couples like to go for walks to look at the Christmas lights and have a romantic meal in a restaurant - booking a table on Christmas Eve can be very difficult as it's so popular!";
-          } else {
-          x.innerHTML = "Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas Cards and Presents are popular.";
-                  }
-                                }        
-        </script>
-  </head>
-    <body>
-      <div class="container p-5 my-5 border align-items-center" id="container">
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container p-5 my-5 border align-items-center" id="container">
         <div class="row gap100">
-          <div class="col-3">
-            <h1 class="text-center">The history of Christmas</h1>
-            <h2 class="text-center">History, orgin, traditions  </h2> 
-          </div>
-          <div class="col-9 text-end" >
-            <img id="mainas" class="img-fluid responsive" alt="ziema" src='https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200' style="width: 100%;">
-          </div>
+            <div class="col-3">
+                <h1 class="text-center">The history of Christmas</h1>
+                <h2 class="text-center">History, origin, traditions </h2>
+            </div>
+            <div class="col-9 text-end">
+                <img id="mainas" class="img-fluid responsive"
+                    src='https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/12/21/13/xmas5.png?width=1200'
+                    style="width: 100%;" alt="ziema">          </div>
         </div>
           <div class="row text-center">
             <div class="col">
